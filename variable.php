@@ -46,6 +46,18 @@
     echo "私の名前は{$my_name}です。";
     ?>
   </p>
+
+  <p>
+    <?php
+    // 関数を定義する
+    function print_name(){
+      $user_name = '侍太郎'; //user_nameはローカル変数
+      echo $user_name;
+    }
+
+    // 関数を呼び出す
+    echo $user_name; //【NG】$user_nameは関数外では使えない
+  </p>
   
 </body>
 </html>
