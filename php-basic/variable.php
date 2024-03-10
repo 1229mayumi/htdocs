@@ -35,7 +35,7 @@
     $my_name = '侍太郎';
 
     // 変数と文字列を連結し、その結果を出力する
-    echo '私の名前は' . $may_name . 'です。';
+    echo '私の名前は' . $my_name . 'です。';
     ?>
   </P>
   
@@ -51,13 +51,19 @@
     <?php
     // 関数を定義する
     function print_name(){
-      $user_name = '侍太郎'; //user_nameはローカル変数
-      echo $user_name;
+      $user_name1 = '侍太郎'; 
+      //user_name1はローカル変数
+      echo $user_name1;
     }
 
     // 関数を呼び出す
-    echo $user_name; //【NG】$user_nameは関数外では使えない
+    // echo $user_name1; //【NG】$user_name1は関数外では使えない
+    echo print_name();
+    ?>
   </p>
+  
+
+
   
 </body>
 </html>
