@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html lang="ja">
-  <head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-  </head>
-  <body>
-    
 
     <?php
     //算術演算子を使った場合の戻り値を出力する
@@ -69,6 +61,3 @@
       }
       ?>
     </p>
-
-  </body>
-</html>
