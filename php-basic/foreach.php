@@ -13,6 +13,17 @@
     foreach ($user_names as $user_name){
       echo $user_name . '<br>';
     }
+
+    //配列$user_namesのインデックスと値を1つずつ順番に出力する
+    foreach ($user_names as $index => $value){
+      echo "{$index}:{$value}<br>";
+    }
+    ?>
+
+    //配列$user_namesのインデックス(1から順)と値を1つずつ順番に出力する
+    foreach ($user_names as $index => $value){
+      echo "{$index + 1}:{$value}<br>";
+    }
     ?>
   </p>
   <p>
