@@ -30,10 +30,16 @@
       echo $value;
     }
     echo '<br>';
-    
+
      //連想配列$personal_dataの値(キーなし）を１つづつ順番にスペースを開けて出力する
      foreach ($personal_data as $value){
       echo $value . ' ';
+     }
+     echo '<br>';
+    
+     //連想配列$personal_dataの値(キーなし）を１つづつ順番に行を変えて出力する
+     foreach ($personal_data as $value){
+      echo $value . '<br>';
      }
     ?>
   </p>
