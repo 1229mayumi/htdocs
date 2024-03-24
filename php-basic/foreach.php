@@ -17,7 +17,7 @@
   </p>
   <p>
     <?php
-    $personal_data = ['name' => '侍太郎 ', 'age' => '36 ', 'gender' => '男性 '];
+    $personal_data = ['name' => '侍太郎', 'age' => 36, 'gender' => '男性'];
 
     //連想配列$personal_dataのキーと値を１つづつ順番に出力する
     foreach ($personal_data as $key => $value){
@@ -29,10 +29,11 @@
      foreach ($personal_data as $value){
       echo $value;
     }
-
+    echo '<br>';
+    
      //連想配列$personal_dataの値(キーなし）を１つづつ順番にスペースを開けて出力する
      foreach ($personal_data as $value){
-      echo $value;
+      echo $value . ' ';
      }
     ?>
   </p>
