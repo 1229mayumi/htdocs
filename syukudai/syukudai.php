@@ -8,12 +8,15 @@
   <p>
     <?php
     $user_names = ['侍一子', '侍二子', '侍三子', '侍四子', '侍五子'];
-    //配列$user_namesをインデックス（１から始める）と値を順番に出力する
-    foreach ($user_names as $index => $value){
-      $no = $index + 1;
-      echo "{$no} : {$value} <br>"; 
+
+    echo '<ol>';
+
+    //配列$user_namesの値を順番に出力する
+    foreach ($user_names as $user_name){
+       echo "<li>$user_name</li>";
     }
-    var_dump($user_names)
+
+    echo '</ol>';
     ?>
   </p>
   
