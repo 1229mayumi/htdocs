@@ -16,7 +16,7 @@
 
     //配列$user_namesのインデックスと値を1つずつ順番に出力する
     foreach ($user_names as $index => $value){
-      echo "{$index}:{$value}<br>";
+      echo ($index + 1) . ":" . $value."\n";
     }
     ?>
 
