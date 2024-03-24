@@ -27,9 +27,7 @@
 
     //配列$user_namesの値を順番に出力する
     foreach ($user_names as $user_name){
-       echo '<ol>';
        echo "<li>$user_name</li>";
-       echo '</ol>';
     }
     // // 終了タグを出力
     // echo '</ol>';
