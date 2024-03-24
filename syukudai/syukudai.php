@@ -5,6 +5,19 @@
   <title>宿題</title>
 </head>
 <body>
+  
+  <p>
+    <?php
+    echo '<ol>';
+    echo '<li>侍一子</li>';
+    echo '<li>侍二子</li>';
+    echo '<li>侍三子</li>';
+    echo '<li>侍四子</li>';
+    echo '<li>侍五子</li>';
+    echo '</ol>';
+    ?>
+  </p>
+
   <p>
     <?php
     $user_names = ['侍一子', '侍二子', '侍三子', '侍四子', '侍五子'];
