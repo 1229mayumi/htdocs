@@ -16,13 +16,14 @@
 
     //配列$user_namesのインデックスと値を1つずつ順番に出力する
     foreach ($user_names as $index => $value){
-      echo ($index + 1) . ":" . $value."\n";
+      echo ($index + 1) . ":" . $value."<br>";
     }
-    ?>
+   
 
     //配列$user_namesのインデックス(1から順)と値を1つずつ順番に出力する
     foreach ($user_names as $index => $value){
-      echo "{$index + 1}:{$value}<br>";
+      $no = $index + 1 ;
+      echo "{$no}:{$value}<br>";
     }
     ?>
   </p>
@@ -52,6 +53,7 @@
      foreach ($personal_data as $value){
       echo $value . '<br>';
      }
+      var_dump($personal_data);
     ?>
   </p>
   <p>出身地を選択してください。</p>
