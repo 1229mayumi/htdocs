@@ -1,6 +1,6 @@
 <?php
  // 型宣言と異なるデータ型の場合にエラーを発生させる
- declare(strict_types=1);
+  declare(strict_types=1);
  ?>
 
 <!DOCTYPE html>
@@ -65,7 +65,7 @@
       return $sum * 2;
     }
     //型宣言と異なるデータ型の引数を渡す（引数が強制的に整数型に変換される）
-    echo type_hinting_argument(1);
+    echo type_hinting_argument(2.657);
     ?>
   </p>
   <p>
@@ -76,7 +76,7 @@
     }
     //型宣言と異なるデータ型の戻り値を返す
     //（PHPファイルの先頭にdeclare(strict_type=1);を記述しているのでエラーが発生する）
-    echo type_hinting_return_value(2);
+    echo type_hinting_return_value(2.678);
     ?>
   </p>
 </body>
