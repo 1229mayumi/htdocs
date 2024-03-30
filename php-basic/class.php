@@ -39,5 +39,29 @@
     echo $shampoo->name;
     ?>
   </p>
+  <p>
+    <?php
+    //クラスを定義する
+    class User {
+      //プロパティを定義する
+      private $name;
+      private $age;
+      private $gender;
+
+      //コンストラクタを定義する
+      public function __construct(string $same, int $age, string $gender){
+        $this->name = $name;
+        $this->age = $age;
+        $this->gender = $gender;
+      }
+    }
+
+    //インスタンス化する
+    $user = new User('侍太郎', 36, '男性');
+
+    //インスタンス$userの各プロパティの値を出力する
+    print_r($user);
+    ?>
+  </p>
 </body>
 </html>
