@@ -4,34 +4,39 @@
   <meta charset="UTF-8">
   <title>PHP基礎編</title>
 </head>
-<body>
+<body
   <p>
     <?php
-    //クラスを定義する
+    // クラスを定義する
     class Product {
-      //プロパティを定義する
-      public $name;
-    }
-    //インスタンス化する
-    $shampoo = new Product();
-    //プロパティにアクセスし、値を代入する
-    $shampoo->name = 'シャンプー';
-    //プロパティにアクセスし、値を出力する
-    echo $shampoo->name;
-    ?>
-  </p>
-  <p>
-    <?php
-    class Product2{
+    // プロパティを定義する
+    //  public $name;
       private $name;
-      //メソッドを定義する
-      public function set_name(string $name){
-        $this->name = $name;
+
+      // メソッドを定義する
+      public function set_name(string $name) {
+          $this->name = $name;
+      }
+      public function show_name() {
+          echo $this->name . '<br>';
       }
     }
-    $shampoo = new Product2();
-    //メソッドにアクセスして実行する
-    $shampoo->set_name('シャンプー');
+
+    // インスタンス化する
+    $coffee = new Product();
+
+    // メソッドにアクセスして実行する
+    $coffee->set_name('コーヒー');
+    $coffee->show_name();
+
+    // インスタンス化する
+    $shampoo = new Product();
+
+    // プロパティにアクセスし、値を代入する
+    $shampoo->name = 'シャンプー';
+
+    // プロパティにアクセスし、値を出力する
+    echo $shampoo->name;
     ?>
   </p>
 </body>
