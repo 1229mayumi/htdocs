@@ -33,10 +33,10 @@
     $shampoo = new Product();
 
     // プロパティにアクセスし、値を代入する
-    $shampoo->name = 'シャンプー';
+    // $shampoo->name = 'シャンプー';
 
     // プロパティにアクセスし、値を出力する
-    echo $shampoo->name;
+    // echo $shampoo->name;
     ?>
   </p>
   <p>
@@ -49,7 +49,7 @@
       private $gender;
 
       //コンストラクタを定義する
-      public function __construct(string $same, int $age, string $gender){
+      public function __construct(string $name, int $age, string $gender){
         $this->name = $name;
         $this->age = $age;
         $this->gender = $gender;
