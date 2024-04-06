@@ -1,12 +1,29 @@
 <?php
 //セッションを開始
 session_start();
+
+//クッキーがあれば氏名を取得
+if (isset($_COOKIE['name'])) {
+  $user_name = $_COOKIE['name'];
+} else {
+  //ユーザー名はまだ不明のため「名無し」とする
+  $user_name = '名無し';
+  //クッキーがなければ登録（今回は固定）
+  setcookie('name', '侍太郎', time() + 3600);
+  echo 'クッキーを追加します。有効きげんは1時間です。';
+}
 //ユーザー名を設定
-$user_name = '侍太郎';
+// $user_name = '侍太郎';
+
 //セッションにデータを保存
-if(isset($_SESSION[$user_name])) {
+if (isset($_SESSION[$user_name])) {
   //セッション変数があれば、訪問回数を1加算
   $_SESSION[$user_name]++;
+
+  //訪問回数が3回を超えたらクッキーを削除
+  if ($_SESSION[$user_name] > 3) {
+    setcookie('name', '', time() - 100);
+  }
 } else {
   //セッション変数がなければ、1(初回訪問)をセット
   $_SESSION[$user_name] = 1;
